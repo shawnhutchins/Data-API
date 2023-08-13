@@ -16,11 +16,13 @@ database.once('connected', () => {
 })
 
 const app = express()
+app.use(express.urlencoded({
+    extended: true
+}))
+app.use(express.json())
 
 app.use('/api', routes)
-app.use(express.json())
 
 app.listen(3000, () => {
     console.log(`Server started at ${3000}`)
 })
-
