@@ -2,8 +2,6 @@ const express = require ('express')
 const router = express.Router()
 const Model = require('../models/model')
 
-
-
 //Post method
 router.post('/post', async (req, res) => {
     console.log(req.body)
