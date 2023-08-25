@@ -40,8 +40,6 @@ router.get('/getOne/:id', async (req, res) => {
     }
 })
 
-
-
 //Update by ID method
 router.patch('/update/:id', async (req, res) => {
     try {
@@ -62,6 +60,5 @@ router.patch('/update/:id', async (req, res) => {
 router.delete('/delete/:id', (req, res) => {
     res.send('Delete by ID API')
 })
-
 
 module.exports = router
